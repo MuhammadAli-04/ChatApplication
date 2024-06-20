@@ -1,0 +1,282 @@
+.main-div {
+  height: 100%;
+  width: 100%;
+}
+
+.icons {
+  height: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  color: lightgrey;
+  filter: invert(1);
+}
+
+.icons:hover {
+  background-color: #303b507a;
+}
+
+.attachment-box {
+  background-image: url("./../../assets/images/attachment.png");
+}
+
+.emojis-box {
+  background-image: url("./../../assets/images/emoji.png");
+}
+
+.microphone-box {
+  background-image: url("./../../assets/images/mic.png");
+}
+
+.chat-box {
+  flex-grow: 4;
+  background-color: #525d71;
+}
+
+.conversation-box {
+  flex-grow: 1;
+  padding: 2%;
+}
+
+.conversation-header {
+  height: 70px;
+  padding: 1% 3%;
+  background-color: #303b50;
+  color: lightgrey;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conversation-footer {
+  height: 70px;
+  padding: 0 3%;
+  background-color: #303b50;
+  color: lightgrey;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.index-box {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.last-msg {
+  text-overflow: ellipsis;
+}
+
+.menu {
+  width: 2%;
+  height: 30px;
+  /*  background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; */
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.1s ease-out;
+}
+
+.menu:hover {
+  background-color: #eeeeee7a;
+}
+
+.menubar {
+  height: 2px;
+  width: 100%;
+  background-color: lightgray;
+  position: absolute;
+}
+
+.menubar:nth-child(1) {
+  top: 7px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menubar:nth-child(2) {
+  top: 14px;
+}
+
+.menubar:nth-child(3) {
+  top: 21px;
+  transition: all 0.5s ease-in-out;
+}
+
+.message-box {
+  flex-grow: 1;
+  background-color: #525d71;
+  border-radius: 35px;
+  padding: 2%;
+}
+
+.message-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  color: lightgrey;
+  resize: none;
+}
+
+.message-input::-webkit-scrollbar {
+  display: none;
+}
+
+.message-input::placeholder {
+  /* position: absolute;
+  top: 37%; */
+  color: lightgrey;
+}
+
+.navbar {
+  background-color: black;
+  color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+.no-space {
+  margin: 0;
+  padding: 0;
+}
+
+.msg {
+  max-width: 45%;
+  min-height: 10px;
+  margin: 1% 0;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.other-msg {
+  background-color: lightgrey;
+  color: #303b50;
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+/* .other-msg::before{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 9px solid lightgrey;
+    border-bottom: 14px solid transparent;
+    margin: -16px 0 0 -23px;
+} */
+
+.own-msg {
+  background-color: #303b50;
+  color: lightgrey;
+  text-align: right;
+  align-self: flex-end;
+  border-top-right-radius: 0;
+}
+
+/* .own-msg::before{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 9px solid #303b50;
+    border-bottom: 15px solid transparent;
+    margin: -16px 0 0 16px;
+} */
+
+.rotate-left {
+  transform: rotate(45deg);
+  top: 14px !important;
+}
+
+.rotate-right {
+  transform: rotate(-45deg);
+  top: 14px !important;
+}
+
+.search-box {
+  padding: 5%;
+}
+.search-input {
+  border: none;
+  outline: none;
+  background-color: #525d71;
+  color: lightgrey;
+  padding: 5%;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.search-input::placeholder {
+  color: lightgrey;
+}
+
+.space-x {
+  width: 20px;
+}
+
+.space-y {
+  height: 5px;
+}
+
+.user-box {
+  /* height: 10%; */
+  /* background-color:#525d71; */
+  color: lightgrey;
+  margin: 2%;
+  padding: 2%;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.461);
+}
+
+.users-section {
+  flex-grow: 1.5;
+  max-width: calc(100% / 3);
+  background-color: #303b50;
+  border-right: 2px solid #525d71;
+  overflow-y: scroll;
+}
+
+.users-section::-webkit-scrollbar {
+  width: 10px;
+}
+
+.users-section::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.users-section::-webkit-scrollbar-thumb {
+  background-color: #525d71;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.user-img {
+  background-color: lightgray;
+  background-image: url("./../../assets/images/user.png");
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.visibility {
+  visibility: hidden;
+}
